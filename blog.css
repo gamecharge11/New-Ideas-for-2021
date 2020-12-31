@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+
+}
+
+li, a, button, h1 {
+    font-family: 'Roboto', cursive;
+    font-weight: 400;
+    font-size: 20px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+    height: 50px;
+    width: 100%;
+    background-color: black;
+    position: fixed;
+}
+
+.logo {
+    cursor: pointer;
+    margin-right: auto;
+}
+.nav_links {
+    list-style: none;
+}
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+}
+.nav_links li a:hover {
+    color: #0088a9;
+}
+button {
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    margin-left: 20px;
+}
+button:hover {
+    background-color: rgba(0, 136, 169, 0.8);   
+}
+#int-img {
+    width: 100%;
+    height: 91.5%;
+    position: absolute;
+}
+input[type="range"] {
+    transform: rotate(270deg);
+    height: 30px;
+}
+.back-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: fixed;
+}
+#vol {
+    margin-top: 140px;
+    margin-left: 23px;
+}
+#play {
+    margin-top: 10px;
+    margin-left: 50px;
+}
+#vol-txt {
+    font-size: 1.5rem;
+    font-family: 'Roboto';
+    display: flex;
+    position: absolute;
+    top: 100px;
+    left: 10px;
+}
+.back-controls {
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    top: 300px;
+    background-color: aliceblue;
+}
+#rvl-bc {
+    border-radius: 0;
+    position: fixed;
+    width: 10px;
+    display: flex;
+    justify-content: center;
+    left: -20px;
+    top: 375px;
+    z-index: 1;
+    font-size: 1.3rem;
+    margin-top: auto;
+}
+.back-controls {
+    display: none;
+}
+#close {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    cursor: pointer;
+    z-index: 100;
+}
+@media only screen and (max-width: 800px) {
+    #logo {
+        display: none;
+    }
+    ul {
+        display: flex;
+        width: 100%;
+    }
+}
+button:active {
+    background-color: #0088A9;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    flex-direction: column;
+    top: 30%;
+    left: 400px;
+}
+.content a {
+    color: white;
+    font-size: 2rem;
+    position: absolute;
+    text-align: center;
+    top: 130px;
+    left: 150px;
+}
+.content a:hover {
+    text-decoration: underline;
+}
+.content h1{
+    position: absolute;
+    left: 170px;
+    color: black;
+}
+.t-1-h {
+    position: relative;
+    top: 100px;
+    margin-left: 60px;
+    font-size: 3rem;
+}
+.md-int {
+    position: relative;
+    top: 70px;
+    color: black;
+    font-size: 3rem;
+    font-family: cursive;
+    left: 15%;
+}
+body {
+    overflow-x: hidden;
+}
+.content p {
+    text-align: center;
+    position: absolute;
+    top: 199px;
+    left: -250px;
+    width: 1250px;
+    font-size: 1.5rem;
+    font-family: cursive;
+}
+.content h1{
+    width: 2000px;
+}
+.ai {
+    font-size: 2rem;
+    position: absolute;
+    top: 600px;
+    margin-left: -150px;
+}
+.head {
+    font-size: 3rem;
+}
+.ai-d {
+    position: absolute;
+    top: 700px;
+    width: 1250px;
+    font-size: 1.5rem;
+    font-family: cursive;
+    font-weight: lighter;
+    left: -250px;
+    text-align: center;
+}
+#back-controls {
+    position: fixed;
+}
+#ec {
+    position: absolute;
+    top: 1000px;
+    font-size: 2rem;
+    left: 200px;
+}
+.ec-d {
+    position: absolute;
+    top: 1100px;
+    width: 1250px;
+    font-size: 1.5rem;
+    font-family: cursive;
+    font-weight: lighter;
+    left: -250px;
+    text-align: center;
+}
+.qc {
+    position: absolute;
+    top: 1550px;
+    font-size: 2rem;
+    left: 200px;
+}
+.qc-d {
+    position: absolute;
+    top: 1600px;
+    width: 1250px;
+    font-size: 1.5rem;
+    font-family: cursive;
+    font-weight: lighter;
+    left: -250px;
+    text-align: center;
+}
+.t-2-h {
+    position: relative;
+    top: 2000px;
+    margin-left: 60px;
+    font-size: 3rem;
+}
+.t-2-p {
+    position: absolute;
+    top: 2100px;
+    width: 1250px;
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: cursive;
+    font-weight: lighter;
+    left: -270px;
+}
+.m-1-h {
+    position: relative;
+    top: 2500px;
+    margin-left: -250px;
+    font-size: 3rem;
+}
+.m-1-p {
+    position: absolute;
+    width: 1250px;
+    font-size: 2rem;
+    top: 2600px;
+    left: -250px;
+    text-align: center;
+    font-family: cursive;
+    font-weight: 10;
+    font-weight: lighter;
+}
+.m-2-h {
+    position: relative;
+    top: 3200px;
+    margin-left: -350px;
+    font-size: 3rem;
+}
+.m-2-p {
+    position: absolute;
+    width: 1250px;
+    font-size: 2rem;
+    top: 3300px;
+    left: -250px;
+    text-align: center;
+    font-family: cursive;
+    font-weight: 10;
+    font-weight: lighter;
+}
+.m-3-h {
+    position: relative;
+    top: 3700px;
+    margin-left: -300px;
+    font-size: 3rem;
+}
+.m-3-p {
+    position: absolute;
+    width: 1250px;
+    font-size: 2rem;
+    top: 3800px;
+    left: -250px;
+    text-align: center;
+    font-family: cursive;
+    font-weight: 10;
+    font-weight: lighter;
+}
+.t-3-h {
+    position: relative;
+    top: 4450px;
+    margin-left: 100px;
+    font-size: 4rem;
+}
+.cars-dl {
+    position: absolute;
+    text-align: center;
+    width: 1250px;
+    font-family: cursive;
+    top: 4575px;
+    left: -280px;
+}
+.cars-dl dt {
+    font-weight: 500;
+    font-size: 2.5rem;
+}
+.cars-dl dd {
+    font-size: 2em;
+}
+#top-button {
+    
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    transition: all 0.3s ease 0s;
+    width: 200px;
+    font-size: 1.5rem;
+    padding: 5px 20px;
+    left: 1319px;
+    cursor: pointer;
+    position: fixed;
+    top: 681px;
+}
+#top-button:hover {
+    text-decoration: none;
+}
